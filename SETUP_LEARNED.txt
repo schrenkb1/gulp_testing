@@ -1,0 +1,14 @@
+Install Git
+	git config --global url."https://".insteadOf git://
+	
+Install Node and NPM
+	npm init
+	
+Install Bower
+	npm install -g bower
+	bower init
+	bower install jquery --save-dev
+
+Install Gulp
+	npm install -g gulp
+	npm install --save-dev gulp

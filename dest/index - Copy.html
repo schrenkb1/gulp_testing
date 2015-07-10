@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="jsonViewer">
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Welcome to this Site!</title>
+	
+	<!-- bower:css -->
+	<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../bower_components/components-font-awesome/css/font-awesome.min.css" />
+	<!-- endbower -->
+	
+	<!-- inject:css -->
+	<link rel="stylesheet" href="css/all.min.css">
+	<!-- endinject -->
+	
+  </head>
+
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">ANGULAR WEATHER</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+
+    </div>
+  </div>
+</nav>
+  
+  
+  <body ng-controller="MainController">
+  <div class="container">
+
+  <div class="row jumbotron">
+    <div class="progress">
+		<div class="{{progBarType}}" style="width: {{ progBar }}%"></div>
+	</div>
+    <h1>Current Weather @</h1>
+	<p>{{ country }} {{ city }} {{region}} {{zipCode}} {{ isp }}</p>
+	<p>Timezone: {{timezone}}</p>
+	<h1>Your Coordinates:</h1>
+	<div class="col-md-6 well">
+		<table class="table">
+			<tr>
+				<th>Latitude</th>
+				<td ng-cloak>{{lat}}</td>
+			</tr>
+			<tr>
+				<th>Longitude</th>
+				<td ng-cloak>{{lon}}</td>
+			</tr>
+			<tr>
+				<th>Ip Address</th>
+				<td ng-cloak>{{ip}}</td>
+			</tr>
+		</table>
+	</div>
+	<div class="col-md-6">
+		<h2>Current Temperature</h2> 
+		<p>{{ description }} {{ nowTemp }} </p>
+		<img ng-src="http://openweathermap.org/img/w/{{code}}.png">
+	</div>
+
+	</div>
+	</div>
+	
+	<div id="footer">
+	<div class="container">
+           <div class="row">
+		<div class="col-xs-6 col-md-9">
+			&copy; 2015 Schrenk
+		</div>
+
+		<div class="col-xs-6 col-md-3">
+			<span class="pull-right">
+			<a class="fa fa-facebook-square fa-2x" href="#" style=""></a> 
+			<a class="fa fa-twitter-square fa-2x" href="#" style=""></a> 
+			<a class="fa fa-google-plus-square fa-2x" href="#" style=""></a> 
+			<a class="fa fa-instagram fa-2x" href="#" style=""></a>
+			</span>
+		</div>
+           </div>
+	</div>
+</div>
+
+	<!-- bower:js -->
+	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="../bower_components/angular/angular.min.js"></script>
+	<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<!-- endbower -->
+	
+	<!-- inject:js --> 
+	<script src="js/all.min.js"></script> 
+	<!-- endinject -->
+	
+  </body>
+
+</html>

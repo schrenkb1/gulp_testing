@@ -1,0 +1,21 @@
+{
+  "data": {
+    "allJs": [
+      "./src/**/*.js",
+      "./*.js"
+    ],
+    "allCss": [
+      "./src/**/*.css",
+      "./*.css"
+    ],
+    "dest": "./dest",
+    "src": "./src",
+    "srcCss": "./src/**/*.css",
+    "srcJs": "./src/**/*.js",
+	"srcCoffee": "./src/**/*.coffee",
+    "destJs": "./dest/js/",
+    "destCss": "./dest/css/",
+	"views": "./views/*.html",
+	"destHtml": "./dest/*.html"
+  }
+}

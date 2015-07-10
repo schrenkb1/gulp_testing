@@ -1,0 +1,26 @@
+{
+  "name": "Gulp-Weather",
+  "version": "0.0.1",
+  "description": "Angular Weather",
+  "main": "custom.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Branden Schrenk GAIG",
+  "license": "ISC",
+  "devDependencies": {
+    "event-stream": "^3.3.1",
+    "gulp": "^3.8.5",
+    "gulp-coffee": "^2.3.1",
+    "gulp-concat": "^2.5.2",
+    "gulp-inject": "^1.3.1",
+    "gulp-jscs": "^1.6.0",
+    "gulp-jshint": "^1.11.0",
+    "gulp-load-plugins": "^1.0.0-rc.1",
+    "gulp-print": "^1.1.0",
+    "gulp-uglify": "^1.2.0",
+    "gulp-uglifycss": "^1.0.4",
+    "gulp-util": "^3.0.5",
+    "wiredep": "^2.2.2"
+  }
+}
